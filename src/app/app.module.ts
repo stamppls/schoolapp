@@ -15,8 +15,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { HeaderToolbarComponent } from "./components/header-toolbar/header-toolbar.component";
 import { environment } from "src/environments/environment";
 import { AuthModule } from "ng6-md-auth";
-import { StudentsComponent } from './students/students.component';
 import { StudentsListComponent } from './students-list/students-list.component';
+import { AddStudentDialogComponent } from './add-student-dialog/add-student-dialog.component';
 
 
 const apiSrvCfg = environment;
@@ -28,8 +28,8 @@ const apiSrvCfg = environment;
     RegisterComponent,
     ForgotComponent,
     HeaderToolbarComponent,
-    StudentsComponent,
-    StudentsListComponent
+    StudentsListComponent,
+    AddStudentDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +42,7 @@ const apiSrvCfg = environment;
     NgxSpinnerModule,
     AuthModule.forRoot(apiSrvCfg)
   ],
+  entryComponents: [AddStudentDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
