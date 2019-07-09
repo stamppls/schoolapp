@@ -1,26 +1,39 @@
-<h4 class = "mt-3">รายชื่อนักเรียน</h4>
-<div class="row" *ngIf="students.length === 0">   
-  <div><button (click) ="openDialog()">กดสิ่</button></div>
+<h4 class="mt-3">รายชื่อนักเรียน</h4>
+<div class="row" *ngIf="students.length === 0">
+  <div class="container">
+    <mat-icon class="icon-personadd" (click)="openDialog()">groupadd</mat-icon>
+  </div>
 </div>
-
 <div class="row" *ngIf="students.length > 0">
   <div class="col-12">
-    <h4 class = "mt-3">รายชื่อนักเรียน</h4>
-    <div><button (click) ="openDialog()">กดสิ่</button></div>
+    <div><mat-icon class="icon-personadd1" (click)="openDialog()">personadd</mat-icon></div>
     <div class="row mt-5">
-      <div class="col-6">
+      <div class="col-3">
+        เลขประจำตัว
+      </div>
+      <div class="col-3">
         ชื่อ-นามสกุล
       </div>
-      <div class="col-6">
-        เบอร์โทรติดต่อ
+      <div class="col-3">
+        สถานะ
+      </div>
+      <div class="col-3">
+        จัดการ
       </div>
     </div>
     <div class="row mt-2" *ngFor="let student of students">
-      <div class="col-6">
+      <div class="col-3">
+        {{student.id}}
+      </div>
+      <div class="col-3">
         {{student.Fullname}}
       </div>
-      <div class="col-6">
-        {{student.TellNo}}
+      <div class="col-3">
+        {{student.status}}
+      </div>
+      <div class="col-3">
+        <button mat-raised-button>แก้ไข</button>
+        <button mat-raised-button>ดาวน์โหลด</button>
       </div>
     </div>
   </div>

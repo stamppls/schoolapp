@@ -1,0 +1,156 @@
+/*step-1*/
+.loc-text{
+    margin-left: 10%;
+}
+.loc-btn-no{
+    margin-left: 40%;
+}
+.loc-btn-yes{
+    margin-left: 5%;
+}
+/*step-2*/
+.icon-backup1 {
+  vertical-align: middle;
+  margin-left:-22%;
+  font-size: 250px;
+}
+.loc-btn-cancel{
+    margin-left: 40.5%;
+}
+.loc-btn-next{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.loc-Choosefile{
+    margin-left: 33%;
+    margin-top: 1%;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 25%;
+    padding-left: 15%;
+    min-width: 50%;
+    min-height: 50%;
+    font-size: 100px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.text-file-size1{
+  margin-top: 23%;
+  margin-left: 33%;
+  width: 30%;
+}
+.text-col-st2-f{
+margin-left: 40.5%;
+}
+.card-st2{
+  max-width: 100%;
+    height: 30%;
+}
+/*step3*/
+.example-form {
+    min-width: 15%;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 96%;
+  }
+  .textbox-loc{
+    margin-left: 1%;
+  }
+  .btn-back-loc{
+    margin-left: 51%;
+    margin-top:1%;
+  }
+  .btn-next-loc{
+    margin-left: 17.3rem;
+    margin-top: 1%;
+  }
+  .example-card {
+    max-width: 90%;
+    height: 20%;
+  }
+  .example-card1 {
+    max-width: 100%;
+    height: 95%;
+  }
+  .text-col-card{
+    margin-left: 105px;
+  }
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .example-viewport {
+    height: 550px;
+    width: 900px;
+    border: 1px solid #00000021;
+  }
+  .example-item {
+    height: 50px;
+  }
+  .loc-text-st3{
+    margin-left: 35%;
+  }
+  .spinner-doc {
+  margin-left: 20%;
+  margin-top: 55%;
+}
+.spinner-doc1{
+  margin-left: 18%;
+}
+  /*step-4*/
+  .icon-backup {
+    vertical-align: middle;
+    margin-left: 37%;
+    font-size: 200px;
+  }
+  .text-loc{
+    margin-left: 28%;
+  }
+  .btn-st4-back-loc{
+    margin-left: 28%;
+  }
+  .btn-st4-next-loc{
+    margin-left: 27%;
+  }
+  .text-file-size{
+    width: 61%;
+  }
+  /*step-5*/
+  .textbox-loc1{
+    margin-left: 30%;
+  }
+  .btn-st5-back-loc{
+    margin-left: 24%;
+    margin-top: 1%;
+  }
+  .btn-st5-confirm-loc{
+    margin-left: 36%;
+    margin-top: 3px;
+  }
+  .icon-check{
+    color: green;
+  }
+  .example-card2 {
+    max-width: 450px;
+    height: 580px;
+    margin-left: 25%;
+  }
+  .text-loc2{
+    margin-left: 20%;
+  }
+  .text-file{
+    margin-left: 25%;
+    width: 51%;
+  }

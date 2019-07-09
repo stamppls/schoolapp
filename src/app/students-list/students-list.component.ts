@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { AddStudentDialogComponent } from '../add-student-dialog/add-student-dialog.component';
 import { FormBuilder } from '@angular/forms';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-students-list',
@@ -9,9 +10,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./students-list.component.scss']
 })
 export class StudentsListComponent implements OnInit {
-  students = [
-
-  ];
+  students = [ ];
 
   constructor(public dialog: MatDialog) {
    
@@ -21,19 +20,29 @@ export class StudentsListComponent implements OnInit {
   }
 
   addStudent() {
-    this.students.push({
-      Fullname: "ธีรศักดิ์ ทับฤทธิ์",
-      TellNo: "061515118"
-    })
+    if (this.students <= [1]) {
+      this.students.push({
+        id: "1105425611234",
+        Fullname: "ธีระ ทับฤทธิ์",
+        status: "ผ่าน"
+      })
+    } else {
+      this.students.push({
+        id: "1324112453489",
+        Fullname: "ธีรศักดิ์ ทับฤทธิ์",
+        status: "ผ่าน"
+      })
+    }
   }
   openDialog(): void {
     const dialogRef = this.dialog.open(AddStudentDialogComponent, {
-      width: "800px"
+      width: "1000px"
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log("Close");
       this.addStudent();
+
     });
   }
 }
