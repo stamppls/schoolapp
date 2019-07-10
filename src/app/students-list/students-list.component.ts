@@ -13,8 +13,8 @@ import { NgIf } from '@angular/common';
 export class StudentsListComponent implements OnInit {
   students = [ ];
   foods: Food[] = [
-    {value: 'steak-0', viewValue: 'ผ่าน'},
-    {value: 'pizza-1', viewValue: 'ไม่ผ่าน'}
+    {value: 'pass', viewValue: 'ผ่าน'},
+    {value: 'notpass', viewValue: 'ไม่ผ่าน'}
   ];
   constructor(public dialog: MatDialog) {
    
