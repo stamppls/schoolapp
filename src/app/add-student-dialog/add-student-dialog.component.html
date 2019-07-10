@@ -21,7 +21,7 @@
           <mat-icon class="icon-backup1" (click)="fileInput.click()">backup</mat-icon>
           <input hidden type="file" #fileInput (change)="detectFiles($event)">
         </div>
-        <div class="alert alert-secondary text-file-size1">
+        <div class="alert alert-secondary text-file-size1" *ngIf="detectFiles != Null">
           {{fileSelected}}
         </div>
       </mat-card>
