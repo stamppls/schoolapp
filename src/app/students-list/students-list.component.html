@@ -32,15 +32,15 @@
         {{student.Fullname}}
       </div>
       <div class="col-3">
-          <mat-select>
+          <mat-select class="select-status">
             <mat-option *ngFor="let food of foods" [value]="food.value">
               {{food.viewValue}}
             </mat-option>
           </mat-select>
       </div>
       <div class="col-3">
-        <button mat-raised-button><mat-icon class="icon-edit">edit</mat-icon>แก้ไข</button>&nbsp;
-        <button mat-raised-button><mat-icon class="icon-download">cloud_download</mat-icon>ดาวน์โหลด</button>
+        <button mat-raised-button color="primary"><mat-icon class="icon-edit">edit</mat-icon>แก้ไข</button>&nbsp;
+        <button mat-raised-button color="primary1"><mat-icon class="icon-download">cloud_download</mat-icon>ดาวน์โหลด</button>
       </div>
     </div>
   </div>

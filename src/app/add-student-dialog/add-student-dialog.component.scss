@@ -10,16 +10,14 @@
 }
 /*step-2*/
 .icon-backup1 {
-  vertical-align: middle;
-  margin-left:-22%;
-  font-size: 250px;
+  margin-left:33%;
+  font-size: 1800%;
 }
 .loc-btn-cancel{
-    margin-left: 39%;
+    margin-left: 34.5%;
 }
 .loc-btn-next{
-    margin-left: 2%;
-    margin-top: 1%;
+    margin-left: 14.5%;
 }
 .loc-Choosefile{
     margin-left: 33%;
@@ -29,27 +27,14 @@
     position: relative;
     overflow: hidden;
 }
-.btn-file input[type=file] {
-    position: absolute;
-    top: 25%;
-    padding-left: 15%;
-    min-width: 50%;
-    min-height: 50%;
-    font-size: 100px;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
 .text-file-size1{
-  margin-top: 23%;
-  margin-left: 33%;
+  margin-top: -3%;
+  margin-left: 34.5%;
+  max-width: 100%;
   width: 30%;
 }
 .text-col-st2-f{
-margin-left: 40.5%;
+margin-left: 42%;
 }
 .card-st2{
   max-width: 100%;
@@ -83,9 +68,6 @@ margin-left: 40.5%;
     max-width: 100%;
     height: 95%;
   }
-  .text-col-card{
-    margin-left: 105px;
-  }
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
@@ -94,9 +76,6 @@ margin-left: 40.5%;
     height: 550px;
     width: 900px;
     border: 1px solid #00000021;
-  }
-  .example-item {
-    height: 50px;
   }
   .loc-text-st3{
     margin-left: 35%;
@@ -127,23 +106,21 @@ margin-left: 40.5%;
     width: 61%;
   }
   /*step-5*/
-  .textbox-loc1{
-    margin-left: 30%;
-  }
   .btn-st5-back-loc{
     margin-left: 25%;
     margin-top: 1%;
   }
   .btn-st5-confirm-loc{
-    margin-left: 34%;
+    margin-left: 31.5%;
     margin-top: 3px;
   }
   .icon-check{
     color: green;
   }
   .example-card2 {
-    max-width: 450px;
-    height: 580px;
+    max-width: 100%;
+    width: 48%;
+    height: 20%;
     margin-left: 25%;
   }
   .text-loc2{
@@ -151,5 +128,5 @@ margin-left: 40.5%;
   }
   .text-file{
     margin-left: 25%;
-    width: 51%;
+    width: 48%;
   }

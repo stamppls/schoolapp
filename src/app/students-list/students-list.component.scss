@@ -7,15 +7,20 @@
 .icon-personadd1{
     color: rgb(101, 190, 74);
 }
-.text-color{
-    color: rgb(236, 16, 16);
-}
 .icon-edit{
-    color: green;
+    color: white;
 }
 .icon-download{
-    color: red;
+    color:white;
 }
-.id{
-    vertical-align: middle;
+.select-status{
+    width:60%;
+    background-color: rgb(243, 243, 243);
 }
+.mat-raised-button.mat-primary {
+    background-color: #1aa237;
+  }
+  .mat-raised-button.mat-primary1 {
+    background-color: #e63333;
+    color: white;
+  }

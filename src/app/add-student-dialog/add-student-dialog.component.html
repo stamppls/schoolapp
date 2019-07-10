@@ -15,20 +15,20 @@
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <mat-card class="card-st2">
-        <ng-template matStepLabel>เลือกไฟล์สูติบัตร</ng-template>
-        <div class="container">
+        <ng-template matStepLabel>เลือกไฟล์ข้อมูล</ng-template>
+        <div>
           <strong class="text-col-st2-f">เลือกไฟล์สูติบัตร</strong>
-          <mat-icon class="icon-backup1" (click)="fileInput.click()">backup</mat-icon>
-          <input hidden type="file" #fileInput (change)="detectFiles($event)">
         </div>
-        <div class="alert alert-secondary text-file-size1" *ngIf="detectFiles != Null">
+        <mat-icon class="icon-backup1" (click)="fileInput.click()">backup</mat-icon>
+        <input hidden type="file" #fileInput (change)="detectFiles($event)">
+        <div class="alert alert-secondary text-file-size1">
           {{fileSelected}}
         </div>
+        <div>
+          <button class="mat-raised-button loc-btn-cancel" color="primary" mat-button (click)="aa()">ยกเลิก</button>
+          <button class="mat-raised-button loc-btn-next" color="primary" mat-button matStepperNext>ถัดไป</button>
+        </div>
       </mat-card>
-      <div>
-        <button class="mat-raised-button loc-btn-cancel" color="primary" mat-button (click)="aa()">ยกเลิก</button>
-        <button class="mat-raised-button loc-btn-next" color="primary" mat-button matStepperNext>ถัดไป</button>
-      </div>
     </form>
   </mat-step>
   /*step-3*/
@@ -128,7 +128,8 @@
             </div>
           </div>
           <div *ngIf="!isshow">
-            <button class="mat-raised-button btn-back-loc" color="primary" mat-button matStepperPrevious>ย้อนกลับ</button>
+            <button class="mat-raised-button btn-back-loc" color="primary" mat-button
+              matStepperPrevious>ย้อนกลับ</button>
             <button class="mat-raised-button btn-next-loc" color="primary" mat-button matStepperNext>ถัดไป</button>
           </div>
         </div>
@@ -170,7 +171,7 @@
       <br>
       <mat-card class="example-card2">
         <h5 class="loc-text-st3">ประวัติส่วนตัว</h5>
-        <form class="example-form textbox-loc">
+        <form class="example-form">
           <mat-form-field class="example-full-width">
             <input type="text" placeholder="เลขที่ประจำตัวประชาชน" matInput [formControl]="idstudent"
               [(ngModel)]="studentTera.idstudent">
@@ -251,7 +252,8 @@
         </div>
       </div>
       <div>
-        <button class="mat-raised-button btn-st5-back-loc" color="primary" mat-button matStepperPrevious>ย้อนกลับ</button>
+        <button class="mat-raised-button btn-st5-back-loc" color="primary" mat-button
+          matStepperPrevious>ย้อนกลับ</button>
         <button class="mat-raised-button btn-st5-confirm-loc" color="primary" mat-button (click)="aa()">ยืนยัน</button>
       </div>
     </cdk-virtual-scroll-viewport>
