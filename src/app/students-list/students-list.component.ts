@@ -9,9 +9,13 @@ import { NgIf } from '@angular/common';
   templateUrl: './students-list.component.html',
   styleUrls: ['./students-list.component.scss']
 })
+
 export class StudentsListComponent implements OnInit {
   students = [ ];
-
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'ผ่าน'},
+    {value: 'pizza-1', viewValue: 'ไม่ผ่าน'}
+  ];
   constructor(public dialog: MatDialog) {
    
   }
@@ -24,13 +28,11 @@ export class StudentsListComponent implements OnInit {
       this.students.push({
         id: "1105425611234",
         Fullname: "ธีระ ทับฤทธิ์",
-        status: "ผ่าน"
       })
     } else {
       this.students.push({
         id: "1324112453489",
         Fullname: "ธีรศักดิ์ ทับฤทธิ์",
-        status: "ผ่าน"
       })
     }
   }
@@ -45,4 +47,8 @@ export class StudentsListComponent implements OnInit {
 
     });
   }
+}
+export interface Food {
+  value: string;
+  viewValue: string;
 }

@@ -4,7 +4,7 @@
     <form [formGroup]="firstFormGroup">
       <ng-template matStepLabel>แจ้งเตือน</ng-template>
       <h2 class="mat-h2 loc-text">
-        <strong>ตรวจสอบให้แน่ใจว่าคุณได้ทำการสแกนเอกสารการสมัครเรียบร้อยแล้วใช่หรือไม่?</strong></h2>
+        <strong>ตรวจสอบให้แน่ใจว่าคุณได้ทำการสแกนเอกสารการสมัครเรียนเรียบร้อยแล้วใช่หรือไม่?</strong></h2>
       <div>
         <button class="mat-raised-button loc-btn-no" color="primary" mat-button (click)="aa()">ไม่</button>
         <button class="mat-raised-button loc-btn-yes" color="primary" mat-button matStepperNext>ใช่</button>
@@ -127,12 +127,12 @@
               </div>
             </div>
           </div>
+          <div *ngIf="!isshow">
+            <button class="mat-raised-button btn-back-loc" color="primary" mat-button matStepperPrevious>ย้อนกลับ</button>
+            <button class="mat-raised-button btn-next-loc" color="primary" mat-button matStepperNext>ถัดไป</button>
+          </div>
         </div>
       </cdk-virtual-scroll-viewport>
-      <div>
-        <button class="mat-raised-button btn-back-loc" color="primary" mat-button matStepperPrevious>ย้อนกลับ</button>
-        <button class="mat-raised-button btn-next-loc" color="primary" mat-button matStepperNext>ถัดไป</button>
-      </div>
     </form>
 
   </mat-step>
@@ -250,10 +250,10 @@
           <mat-icon class="icon-check">check</mat-icon>-{{item.name}}
         </div>
       </div>
+      <div>
+        <button class="mat-raised-button btn-st5-back-loc" color="primary" mat-button matStepperPrevious>ย้อนกลับ</button>
+        <button class="mat-raised-button btn-st5-confirm-loc" color="primary" mat-button (click)="aa()">ยืนยัน</button>
+      </div>
     </cdk-virtual-scroll-viewport>
-    <div>
-      <button class="mat-raised-button btn-st5-back-loc" color="primary" mat-button matStepperPrevious>ย้อนกลับ</button>
-      <button class="mat-raised-button btn-st5-confirm-loc" color="primary" mat-button (click)="aa()">ยืนยัน</button>
-    </div>
   </mat-step>
 </mat-horizontal-stepper>

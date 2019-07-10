@@ -1,12 +1,15 @@
-<h4 class="mt-3">รายชื่อนักเรียน</h4>
 <div class="row" *ngIf="students.length === 0">
+  <h4 class="mt-3">ยังไม่มีรายชื่อนักเรียน</h4>
   <div class="container">
-    <mat-icon class="icon-personadd" (click)="openDialog()">groupadd</mat-icon>
+    <mat-icon class="icon-personadd" (click)="openDialog()">note_add</mat-icon>
   </div>
 </div>
 <div class="row" *ngIf="students.length > 0">
+  <h4 class="mt-3">รายชื่อนักเรียน</h4>
   <div class="col-12">
-    <div><mat-icon class="icon-personadd1" (click)="openDialog()">personadd</mat-icon></div>
+    <div>
+      <mat-icon class="icon-personadd1" (click)="openDialog()">note_add เพิ่มข้อมูลรายชื่อ</mat-icon>
+    </div>
     <div class="row mt-5">
       <div class="col-3">
         เลขประจำตัว
@@ -29,11 +32,15 @@
         {{student.Fullname}}
       </div>
       <div class="col-3">
-        {{student.status}}
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
       </div>
       <div class="col-3">
-        <button mat-raised-button>แก้ไข</button>
-        <button mat-raised-button>ดาวน์โหลด</button>
+        <button mat-raised-button><mat-icon>edit</mat-icon>แก้ไข</button>
+        <button mat-raised-button><mat-icon>cloud_download</mat-icon>ดาวน์โหลด</button>
       </div>
     </div>
   </div>

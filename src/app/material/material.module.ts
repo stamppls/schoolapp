@@ -10,9 +10,10 @@ import {
   MatSnackBarModule,
   MatDialogModule,
   MatAutocompleteModule,
+  MatSelectModule
+  
 } from "@angular/material";
 import { NgModule } from "@angular/core";
-
 @NgModule({
   imports: [
     MatButtonModule,
@@ -25,7 +26,8 @@ import { NgModule } from "@angular/core";
     MatMenuModule,
     MatSnackBarModule,
     MatDialogModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatSelectModule
   ],
   exports: [
     MatButtonModule,
@@ -38,7 +40,8 @@ import { NgModule } from "@angular/core";
     MatMenuModule,
     MatSnackBarModule,
     MatDialogModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule {}
