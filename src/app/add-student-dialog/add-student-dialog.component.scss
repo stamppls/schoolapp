@@ -3,21 +3,40 @@
     margin-left: 10%;
 }
 .loc-btn-no{
-    margin-left: 40%;
-}
+  margin-left: 16.5%;
+  margin-inline-start: 28%;
+  margin-right: 10%;
+} 
 .loc-btn-yes{
-    margin-left: 5%;
+  margin-top: 10%;
+}
+.mat-raised-button{
+  margin-left: 12.5%;
+}
+.mat-raised-button.mat-primary {
+  background-color: #1aa237;
+}
+.mat-raised-button.mat-primary1 {
+  background-color: #e63333;
+  color: white;
 }
 /*step-2*/
+.img-fileupload-st2{
+  width: 40%;
+  height: 50%;
+  margin-left: 32.5%;
+  margin-top: 3%;
+}
 .icon-backup1 {
   margin-left:33%;
   font-size: 1800%;
 }
 .loc-btn-cancel{
-    margin-left: 34.5%;
+  margin-inline-start: 27.5%;
 }
 .loc-btn-next{
-    margin-left: 14.5%;
+  margin-inline-start: 28%;
+  margin-top: 2%;
 }
 .loc-Choosefile{
     margin-left: 33%;
@@ -28,13 +47,13 @@
     overflow: hidden;
 }
 .text-file-size1{
-  margin-top: -3%;
-  margin-left: 34.5%;
+  margin-top: 5%;
+  margin-left: 25%;
   max-width: 100%;
-  width: 30%;
+  width: 50%;
 }
 .text-col-st2-f{
-margin-left: 42%;
+  margin-left: 35%;
 }
 .card-st2{
   max-width: 100%;

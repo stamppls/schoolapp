@@ -1,3 +1,12 @@
+/*img*/
+.img-student {
+    vertical-align: middle;
+    border-style: none;
+    width: 60%;
+    height: 70%;
+    margin-left: 22.5%;
+    margin-top: 5%;
+}
 .icon-personadd{
     font-size: 2500%;
     margin-top: 8%;
@@ -14,13 +23,29 @@
     color:white;
 }
 .select-status{
-    width:60%;
+    width:90%;
     background-color: rgb(243, 243, 243);
 }
-.mat-raised-button.mat-primary {
+  .mat-raised-button.mat-primary {
     background-color: #1aa237;
   }
   .mat-raised-button.mat-primary1 {
     background-color: #e63333;
     color: white;
+  }
+  /*Table*/
+  .Fullname-loc{
+      margin-left: 50%;
+  }
+  .example-container {
+    height: 400px;
+  }
+  table {
+    width: 100%;
+  }
+  .download-color{
+      color: white;
+  }
+  .edit-color{
+      color:white;
   }

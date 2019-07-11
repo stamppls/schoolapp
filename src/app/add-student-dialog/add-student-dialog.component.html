@@ -5,9 +5,9 @@
       <ng-template matStepLabel>แจ้งเตือน</ng-template>
       <h2 class="mat-h2 loc-text">
         <strong>ตรวจสอบให้แน่ใจว่าคุณได้ทำการสแกนเอกสารการสมัครเรียนเรียบร้อยแล้วใช่หรือไม่?</strong></h2>
-      <div>
-        <button class="mat-raised-button loc-btn-no" color="primary" mat-button (click)="aa()">ไม่</button>
-        <button class="mat-raised-button loc-btn-yes" color="primary" mat-button matStepperNext>ใช่</button>
+      <div class="loc-btn-no">
+        <button class="mat-raised-button" color="primary" mat-button (click)="aa()">ไม่</button>
+        <button class="mat-raised-button loc-btn-yes" color="primary1" mat-button matStepperNext>ใช่</button>
       </div>
     </form>
   </mat-step>
@@ -17,16 +17,16 @@
       <mat-card class="card-st2">
         <ng-template matStepLabel>เลือกไฟล์ข้อมูล</ng-template>
         <div>
-          <strong class="text-col-st2-f">เลือกไฟล์สูติบัตร</strong>
+          <h5><strong class="text-col-st2-f">เลือกไฟล์สูติบัตร</strong></h5>
         </div>
-        <mat-icon class="icon-backup1" (click)="fileInput.click()">backup</mat-icon>
+        <img class = "img-fileupload-st2"src="https://image.flaticon.com/icons/svg/1754/1754572.svg" (click)="fileInput.click()" alt="">
         <input hidden type="file" #fileInput (change)="detectFiles($event)">
         <div class="alert alert-secondary text-file-size1">
           {{fileSelected}}
         </div>
         <div>
           <button class="mat-raised-button loc-btn-cancel" color="primary" mat-button (click)="aa()">ยกเลิก</button>
-          <button class="mat-raised-button loc-btn-next" color="primary" mat-button matStepperNext>ถัดไป</button>
+          <button class="mat-raised-button loc-btn-next" color="primary1" mat-button matStepperNext>ถัดไป</button>
         </div>
       </mat-card>
     </form>
@@ -130,7 +130,7 @@
           <div *ngIf="!isshow">
             <button class="mat-raised-button btn-back-loc" color="primary" mat-button
               matStepperPrevious>ย้อนกลับ</button>
-            <button class="mat-raised-button btn-next-loc" color="primary" mat-button matStepperNext>ถัดไป</button>
+            <button class="mat-raised-button btn-next-loc" color="primary1" mat-button matStepperNext>ถัดไป</button>
           </div>
         </div>
       </cdk-virtual-scroll-viewport>
@@ -160,7 +160,7 @@
       <div>
         <button class="mat-raised-button btn-st4-back-loc" color="primary" mat-button
           matStepperPrevious>ย้อนกลับ</button>
-        <button class="mat-raised-button btn-st4-next-loc" color="primary" mat-button matStepperNext>ถัดไป</button>
+        <button class="mat-raised-button btn-st4-next-loc" color="primary1" mat-button matStepperNext>ถัดไป</button>
       </div>
     </form>
   </mat-step>
@@ -254,7 +254,7 @@
       <div>
         <button class="mat-raised-button btn-st5-back-loc" color="primary" mat-button
           matStepperPrevious>ย้อนกลับ</button>
-        <button class="mat-raised-button btn-st5-confirm-loc" color="primary" mat-button (click)="aa()">ยืนยัน</button>
+        <button class="mat-raised-button btn-st5-confirm-loc" color="primary1" mat-button (click)="aa()">ยืนยัน</button>
       </div>
     </cdk-virtual-scroll-viewport>
   </mat-step>

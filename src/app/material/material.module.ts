@@ -11,6 +11,7 @@ import {
   MatDialogModule,
   MatAutocompleteModule,
   MatSelectModule,
+  MatTableModule
   
 } from "@angular/material";
 import { NgModule } from "@angular/core";
@@ -27,7 +28,8 @@ import { NgModule } from "@angular/core";
     MatSnackBarModule,
     MatDialogModule,
     MatAutocompleteModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTableModule
   ],
   exports: [
     MatButtonModule,
@@ -41,7 +43,8 @@ import { NgModule } from "@angular/core";
     MatSnackBarModule,
     MatDialogModule,
     MatAutocompleteModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTableModule
   ]
 })
 export class MaterialModule {}

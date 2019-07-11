@@ -16,13 +16,14 @@ export class StudentsListComponent implements OnInit {
     {value: 'pass', viewValue: 'ผ่าน'},
     {value: 'notpass', viewValue: 'ไม่ผ่าน'}
   ];
+  displayedColumns = ['ID', 'Fullname','Status','Manage'];
+  dataSource = ELEMENT_DATA;
   constructor(public dialog: MatDialog) {
    
   }
 
   ngOnInit() {
   }
-
   addStudent() {
     if (this.students <= [1]) {
       this.students.push({
@@ -48,6 +49,15 @@ export class StudentsListComponent implements OnInit {
     });
   }
 }
+export interface PeriodicElement {
+  ID: string;
+  Fullname: string;
+  
+}
+const ELEMENT_DATA: PeriodicElement[] = [
+  {ID: "1-1042-00754-85-9", Fullname: 'ธีระ ทับฤทธิ์'},
+];
+
 export interface Food {
   value: string;
   viewValue: string;
