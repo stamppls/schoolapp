@@ -141,10 +141,10 @@
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>เลือกไฟล์เอกสารอื่นๆ</ng-template>
-      <mat-icon class="icon-backup" (click)="fileInput2.click()">backup</mat-icon>
+      <img class = "icon-backup"src="https://image.flaticon.com/icons/svg/1754/1754572.svg" (click)="fileInput2.click()" alt="">
       <input hidden type="file" #fileInput2 multiple (change)="detectFiles2($event)">
       <div class="text-loc">
-        <br><br><br><br><br><br><br>
+        <br>
         <h5><strong>ไฟล์เอกสารประกอบข้อมูลการสมัครอื่นๆ เช่น</strong></h5>
         <p>
           -สำเนาบัตรประชาชน<br>
